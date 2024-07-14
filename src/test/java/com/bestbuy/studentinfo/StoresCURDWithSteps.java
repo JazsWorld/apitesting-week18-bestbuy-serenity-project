@@ -1,6 +1,7 @@
 package com.bestbuy.studentinfo;
 
 import com.bestbuy.bestbuyinfo.StoreSteps;
+import com.bestbuy.testbase.TestBaseStores;
 import com.bestbuy.utils.TestUtils;
 import io.restassured.response.ValidatableResponse;
 import net.serenitybdd.annotations.Steps;
@@ -15,7 +16,7 @@ import java.util.HashMap;
 import static org.hamcrest.Matchers.hasValue;
 
 @RunWith(SerenityRunner.class)
-public class StoresCURDWithSteps {
+public class StoresCURDWithSteps extends TestBaseStores {
     static String name = "Mary John" + TestUtils.getRandomValue();
     static String type = "sendBox"  + TestUtils.getRandomValue();
     static String address = "12345 16Th Street"  + TestUtils.getRandomValue();
